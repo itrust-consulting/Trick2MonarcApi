@@ -1,0 +1,621 @@
+\hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase}{}\doxysection{lu.\+itrust.\+monarc.\+Monarc\+Database Class Reference}
+\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase}\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+
+
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1Main}{Main}} class for converting the Monarc JSON database file in Java objects.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae0fccbb231c1d9091b13be7d5e1b4831}{Monarc\+Database}} (String json\+Path)  throws Stream\+Read\+Exception, Databind\+Exception, IOException     
+\begin{DoxyCompactList}\small\item\em Constructor, processes the JSON file and populates the internal representation of the JSON as Java objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a837a4124e95b26477412923ececfa871}{Search\+Risk\+By\+ID}} (int risk\+ID)
+\begin{DoxyCompactList}\small\item\em Search the risks extracted from the Monarc JSON file according to its ID. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aa0a392c98fe826e7e32c6cc4800e2c2c}{Search\+Risk\+By\+AMV}} (String amv)
+\begin{DoxyCompactList}\small\item\em Search the risks extracted from the Monarc JSON file related to a certain AMV. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_add1e9bf7aecfa4f1853accf756f44a4a}{Search\+Risk\+By\+Threat}} (String threat)
+\begin{DoxyCompactList}\small\item\em Search the risks extracted from the Monarc JSON file related to a certain threat. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aca0d84e7935db47d3cd584879e31ff64}{Search\+Risk\+By\+Vulnerability}} (String vulnerability)
+\begin{DoxyCompactList}\small\item\em Search the risks extracted from the Monarc JSON file related to a certain vulnerability. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_afd5b995c8c1fd5130211022d6e0ba824}{Search\+Threat\+By\+Label}} (String label, int language\+Code)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON by the label field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a1a9b80f500288c088feb9ff7745e370f}{Search\+Threat\+By\+Description}} (String description, int language\+Code)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON by the description field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a4151eab521164e070d14de655f3766ab}{Search\+Threat\+By\+Code}} (String code)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON by the code field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ac724dcc860b01aa27fd750f3776dc66d}{Search\+Threat\+By\+UUID}} (String uuid)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON by the uuid field. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_af5680d34af681c068723a396f5d137f6}{Get\+All\+Threats\+For\+Vulnerability}} (\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} vulnerability)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON related to a single vulnerability. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a91a79c32a27181d7aa4cb275b4a62bc2}{Search\+AMVBy\+UUID}} (String uuid)
+\begin{DoxyCompactList}\small\item\em Search the AMV extracted from the Monarc JSON by the uuid field. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae3b3c0513d19bea9aac2ae30e8afa5c4}{Search\+AMVBy\+Threat}} (String threat)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON related to a single threat code. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aedead38c6e6c864bb8dab1fdd06a8a9f}{Search\+AMVBy\+Vulnerability}} (String vulnerability)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON related to a single vulnerability code. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_afc4cd80763ec186726de339f7246a91e}{Search\+AMVBy\+Asset}} (String asset)
+\begin{DoxyCompactList}\small\item\em Search the threats extracted from the Monarc JSON related to a single asset code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ab78492ca51da5149903c1eb177bef2ae}{Search\+Vulnerability\+By\+Label}} (String label, int language\+Code)
+\begin{DoxyCompactList}\small\item\em Search the vulnerabilities extracted from the Monarc JSON by the label field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a2aa52235ccbfcdd28f3137ea2431b2ba}{Search\+Vulnerability\+By\+Description}} (String description, int language\+Code)
+\begin{DoxyCompactList}\small\item\em Search the vulnerabilities extracted from the Monarc JSON by the description field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a5af83a537b3e52ec7018be51ee3e0c53}{Search\+Vulnerability\+By\+Code}} (String code)
+\begin{DoxyCompactList}\small\item\em Search the vulnerabilities extracted from the Monarc JSON by the code field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_acc448abfed0a7a0424f79ef72a909959}{Search\+Vulnerability\+By\+UUID}} (String uuid)
+\begin{DoxyCompactList}\small\item\em Search the vulnerabilities extracted from the Monarc JSON by the uuid field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ac6c50e74aee94b75be2ecf116c316a08}{Update\+Threat\+Value}} (String threat\+UUID, String new\+Value)
+\item 
+void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a483a3422dcb8069cbe40da3bc45fac14}{Save\+Map\+To\+Json}} (String output\+Path)  throws IOException     
+\item 
+void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a54ef4498f9bad156c7e0f34278fc72ef}{Save\+Instances\+To\+JSON}} (String output\+Path)  throws IOException     
+\item 
+void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a7b516fe9f88a4a840968ed51a0382b3f}{Populate\+Tree}} (Map$<$ Integer, \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}} $>$ tree\+Base, \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}} new\+Parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}} \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a8041fcfa76b3693d643377d292f8ff67}{extract\+Instance\+Data}} (Map.\+Entry$<$?, ?$>$ entry)
+\item 
+static$<$ T $>$ Predicate$<$ T $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a12836d948ca4da6e27bff734c181470c}{distinct\+By\+Key}} (Function$<$? super T, Object $>$ key\+Extractor)
+\begin{DoxyCompactList}\small\item\em Helper function to eliminate duplicates from the records. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a75f49f6272c74b66887b92d3082e1ca5}{extract\+Risks}} (Map.\+Entry$<$?, ?$>$ entry)
+\begin{DoxyCompactList}\small\item\em Helper function to extract the risks from the Monarc JSON file and create a List populated with the Java representation of such data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae5d6ec5340acd0392d7f291e070279f2}{extract\+Vulnerabilities}} (Map.\+Entry$<$?, ?$>$ entry)
+\begin{DoxyCompactList}\small\item\em Helper function to extract the vulnerabilities from the Monarc JSON file and create a List populated with the Java representation of such data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a93de6dabd79394ccc5d6a5ee197a8d49}{extract\+Threats}} (Map.\+Entry$<$?, ?$>$ entry)
+\begin{DoxyCompactList}\small\item\em Helper function to extract the threats from the Monarc JSON file and create a List populated with the Java representation of such data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a94d3e09cda22152bc4e54cb7b2dcbed4}{extract\+AMVs}} (Map.\+Entry$<$?, ?$>$ entry)
+\begin{DoxyCompactList}\small\item\em Helper function to extract the AMVs from the Monarc JSON file and create a List populated with the Java representation of such data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a30aa4e2336b49e5aca5f8267f519c62e}{monarc\+Data}}
+\item 
+static List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a4650ea3f3464493beab46ff4ae6e0621}{monarc\+Risk\+List}}
+\item 
+static List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a01e40b3531855230b2124b71799f8de2}{monarc\+Vulnerability\+List}}
+\item 
+static Map$<$ String, \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ad3858703d3b94f285970ebf17aab93b1}{monarc\+Threat\+List}}
+\item 
+static List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a02fa8d86c42250eff8277bde4075a029}{monarc\+AMVList}}
+\item 
+static Map$<$ String, ?$>$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a6426737d0227dcbb579ac1e8eaa28903}{json\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1Main}{Main}} class for converting the Monarc JSON database file in Java objects. 
+
+This class not only gathers the data from the JSON file, but provides functions for searching the data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae0fccbb231c1d9091b13be7d5e1b4831}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae0fccbb231c1d9091b13be7d5e1b4831}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!MonarcDatabase@{MonarcDatabase}}
+\index{MonarcDatabase@{MonarcDatabase}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{MonarcDatabase()}{MonarcDatabase()}}
+{\footnotesize\ttfamily lu.\+itrust.\+monarc.\+Monarc\+Database.\+Monarc\+Database (\begin{DoxyParamCaption}\item[{String}]{json\+Path }\end{DoxyParamCaption}) throws Stream\+Read\+Exception, Databind\+Exception, IOException}
+
+
+
+Constructor, processes the JSON file and populates the internal representation of the JSON as Java objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Path} & The path for the Monarc JSON file to be processed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Stream\+Read\+Exception} & \\
+\hline
+{\em Databind\+Exception} & \\
+\hline
+{\em IOException} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a12836d948ca4da6e27bff734c181470c}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a12836d948ca4da6e27bff734c181470c}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!distinctByKey@{distinctByKey}}
+\index{distinctByKey@{distinctByKey}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{distinctByKey()}{distinctByKey()}}
+{\footnotesize\ttfamily static$<$ T $>$ Predicate$<$ T $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+distinct\+By\+Key (\begin{DoxyParamCaption}\item[{Function$<$? super T, Object $>$}]{key\+Extractor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper function to eliminate duplicates from the records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & \\
+\hline
+{\em key\+Extractor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a94d3e09cda22152bc4e54cb7b2dcbed4}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a94d3e09cda22152bc4e54cb7b2dcbed4}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!extractAMVs@{extractAMVs}}
+\index{extractAMVs@{extractAMVs}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{extractAMVs()}{extractAMVs()}}
+{\footnotesize\ttfamily static void lu.\+itrust.\+monarc.\+Monarc\+Database.\+extract\+AMVs (\begin{DoxyParamCaption}\item[{Map.\+Entry$<$?, ?$>$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper function to extract the AMVs from the Monarc JSON file and create a List populated with the Java representation of such data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a8041fcfa76b3693d643377d292f8ff67}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a8041fcfa76b3693d643377d292f8ff67}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!extractInstanceData@{extractInstanceData}}
+\index{extractInstanceData@{extractInstanceData}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{extractInstanceData()}{extractInstanceData()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+extract\+Instance\+Data (\begin{DoxyParamCaption}\item[{Map.\+Entry$<$?, ?$>$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a75f49f6272c74b66887b92d3082e1ca5}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a75f49f6272c74b66887b92d3082e1ca5}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!extractRisks@{extractRisks}}
+\index{extractRisks@{extractRisks}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{extractRisks()}{extractRisks()}}
+{\footnotesize\ttfamily static void lu.\+itrust.\+monarc.\+Monarc\+Database.\+extract\+Risks (\begin{DoxyParamCaption}\item[{Map.\+Entry$<$?, ?$>$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper function to extract the risks from the Monarc JSON file and create a List populated with the Java representation of such data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a93de6dabd79394ccc5d6a5ee197a8d49}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a93de6dabd79394ccc5d6a5ee197a8d49}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!extractThreats@{extractThreats}}
+\index{extractThreats@{extractThreats}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{extractThreats()}{extractThreats()}}
+{\footnotesize\ttfamily static void lu.\+itrust.\+monarc.\+Monarc\+Database.\+extract\+Threats (\begin{DoxyParamCaption}\item[{Map.\+Entry$<$?, ?$>$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper function to extract the threats from the Monarc JSON file and create a List populated with the Java representation of such data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae5d6ec5340acd0392d7f291e070279f2}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae5d6ec5340acd0392d7f291e070279f2}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!extractVulnerabilities@{extractVulnerabilities}}
+\index{extractVulnerabilities@{extractVulnerabilities}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{extractVulnerabilities()}{extractVulnerabilities()}}
+{\footnotesize\ttfamily static void lu.\+itrust.\+monarc.\+Monarc\+Database.\+extract\+Vulnerabilities (\begin{DoxyParamCaption}\item[{Map.\+Entry$<$?, ?$>$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper function to extract the vulnerabilities from the Monarc JSON file and create a List populated with the Java representation of such data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_af5680d34af681c068723a396f5d137f6}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_af5680d34af681c068723a396f5d137f6}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!GetAllThreatsForVulnerability@{GetAllThreatsForVulnerability}}
+\index{GetAllThreatsForVulnerability@{GetAllThreatsForVulnerability}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{GetAllThreatsForVulnerability()}{GetAllThreatsForVulnerability()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Get\+All\+Threats\+For\+Vulnerability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}}}]{vulnerability }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON related to a single vulnerability. 
+
+This method returns a list populated with Monarc\+Threat objects relative to a Monarc\+Vulnerability
+
+
+\begin{DoxyParams}{Parameters}
+{\em vulnerability} & The vulnerability to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list with all the \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} related to the Monarc\+Vulnerability passed as argument 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a7b516fe9f88a4a840968ed51a0382b3f}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a7b516fe9f88a4a840968ed51a0382b3f}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!PopulateTree@{PopulateTree}}
+\index{PopulateTree@{PopulateTree}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{PopulateTree()}{PopulateTree()}}
+{\footnotesize\ttfamily void lu.\+itrust.\+monarc.\+Monarc\+Database.\+Populate\+Tree (\begin{DoxyParamCaption}\item[{Map$<$ Integer, \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}} $>$}]{tree\+Base,  }\item[{\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}}}]{new\+Parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a54ef4498f9bad156c7e0f34278fc72ef}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a54ef4498f9bad156c7e0f34278fc72ef}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SaveInstancesToJSON@{SaveInstancesToJSON}}
+\index{SaveInstancesToJSON@{SaveInstancesToJSON}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SaveInstancesToJSON()}{SaveInstancesToJSON()}}
+{\footnotesize\ttfamily void lu.\+itrust.\+monarc.\+Monarc\+Database.\+Save\+Instances\+To\+JSON (\begin{DoxyParamCaption}\item[{String}]{output\+Path }\end{DoxyParamCaption}) throws IOException}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a483a3422dcb8069cbe40da3bc45fac14}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a483a3422dcb8069cbe40da3bc45fac14}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SaveMapToJson@{SaveMapToJson}}
+\index{SaveMapToJson@{SaveMapToJson}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SaveMapToJson()}{SaveMapToJson()}}
+{\footnotesize\ttfamily void lu.\+itrust.\+monarc.\+Monarc\+Database.\+Save\+Map\+To\+Json (\begin{DoxyParamCaption}\item[{String}]{output\+Path }\end{DoxyParamCaption}) throws IOException}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_afc4cd80763ec186726de339f7246a91e}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_afc4cd80763ec186726de339f7246a91e}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchAMVByAsset@{SearchAMVByAsset}}
+\index{SearchAMVByAsset@{SearchAMVByAsset}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchAMVByAsset()}{SearchAMVByAsset()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+AMVBy\+Asset (\begin{DoxyParamCaption}\item[{String}]{asset }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON related to a single asset code. 
+
+This method returns a list populated with \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} objects relative to a single asset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asset} & The asset uuid to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list with all the \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} objects related to the Monarc\+Vulnerability passed as argument 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae3b3c0513d19bea9aac2ae30e8afa5c4}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ae3b3c0513d19bea9aac2ae30e8afa5c4}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchAMVByThreat@{SearchAMVByThreat}}
+\index{SearchAMVByThreat@{SearchAMVByThreat}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchAMVByThreat()}{SearchAMVByThreat()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+AMVBy\+Threat (\begin{DoxyParamCaption}\item[{String}]{threat }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON related to a single threat code. 
+
+This method returns a list populated with \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} objects relative to a single threat
+
+
+\begin{DoxyParams}{Parameters}
+{\em threat} & The threat uuid to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a91a79c32a27181d7aa4cb275b4a62bc2}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a91a79c32a27181d7aa4cb275b4a62bc2}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchAMVByUUID@{SearchAMVByUUID}}
+\index{SearchAMVByUUID@{SearchAMVByUUID}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchAMVByUUID()}{SearchAMVByUUID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+AMVBy\+UUID (\begin{DoxyParamCaption}\item[{String}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Search the AMV extracted from the Monarc JSON by the uuid field. 
+
+This method returns the \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} object relative to the uuid, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The uuid string to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the threat found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aedead38c6e6c864bb8dab1fdd06a8a9f}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aedead38c6e6c864bb8dab1fdd06a8a9f}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchAMVByVulnerability@{SearchAMVByVulnerability}}
+\index{SearchAMVByVulnerability@{SearchAMVByVulnerability}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchAMVByVulnerability()}{SearchAMVByVulnerability()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+AMVBy\+Vulnerability (\begin{DoxyParamCaption}\item[{String}]{vulnerability }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON related to a single vulnerability code. 
+
+This method returns a list populated with \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} objects relative to a single vulnerability
+
+
+\begin{DoxyParams}{Parameters}
+{\em vulnerability} & The vulnerability uuid to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list with all the \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}} objects related to the Monarc\+Vulnerability passed as argument 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aa0a392c98fe826e7e32c6cc4800e2c2c}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aa0a392c98fe826e7e32c6cc4800e2c2c}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchRiskByAMV@{SearchRiskByAMV}}
+\index{SearchRiskByAMV@{SearchRiskByAMV}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchRiskByAMV()}{SearchRiskByAMV()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Risk\+By\+AMV (\begin{DoxyParamCaption}\item[{String}]{amv }\end{DoxyParamCaption})}
+
+
+
+Search the risks extracted from the Monarc JSON file related to a certain AMV. 
+
+This method returns multiple objects, as one AMV may relate to multiple risks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amv} & The amv UUID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A List with \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} related to a single risk UUID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a837a4124e95b26477412923ececfa871}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a837a4124e95b26477412923ececfa871}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchRiskByID@{SearchRiskByID}}
+\index{SearchRiskByID@{SearchRiskByID}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchRiskByID()}{SearchRiskByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Risk\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{risk\+ID }\end{DoxyParamCaption})}
+
+
+
+Search the risks extracted from the Monarc JSON file according to its ID. 
+
+This method returns only one object, as the ID is a unique field to reference a risk.
+
+
+\begin{DoxyParams}{Parameters}
+{\em risk\+ID} & The ID of the risk in the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} object relative to the searched risk 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_add1e9bf7aecfa4f1853accf756f44a4a}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_add1e9bf7aecfa4f1853accf756f44a4a}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchRiskByThreat@{SearchRiskByThreat}}
+\index{SearchRiskByThreat@{SearchRiskByThreat}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchRiskByThreat()}{SearchRiskByThreat()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Risk\+By\+Threat (\begin{DoxyParamCaption}\item[{String}]{threat }\end{DoxyParamCaption})}
+
+
+
+Search the risks extracted from the Monarc JSON file related to a certain threat. 
+
+This method returns multiple objects, as one threat may relate to multiple risks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em threat} & The threat UUID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A List with \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} related to a single threat UUID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aca0d84e7935db47d3cd584879e31ff64}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_aca0d84e7935db47d3cd584879e31ff64}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchRiskByVulnerability@{SearchRiskByVulnerability}}
+\index{SearchRiskByVulnerability@{SearchRiskByVulnerability}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchRiskByVulnerability()}{SearchRiskByVulnerability()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} $>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Risk\+By\+Vulnerability (\begin{DoxyParamCaption}\item[{String}]{vulnerability }\end{DoxyParamCaption})}
+
+
+
+Search the risks extracted from the Monarc JSON file related to a certain vulnerability. 
+
+This method returns multiple objects, as one vulnerability may relate to multiple risks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vulnerability} & The vulnerability UUID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A List with \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}} related to a single vulnerability UUID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a4151eab521164e070d14de655f3766ab}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a4151eab521164e070d14de655f3766ab}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchThreatByCode@{SearchThreatByCode}}
+\index{SearchThreatByCode@{SearchThreatByCode}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchThreatByCode()}{SearchThreatByCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Threat\+By\+Code (\begin{DoxyParamCaption}\item[{String}]{code }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON by the code field. 
+
+This method returns the Monarc\+Threat object relative to the code, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code string to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the threat found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a1a9b80f500288c088feb9ff7745e370f}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a1a9b80f500288c088feb9ff7745e370f}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchThreatByDescription@{SearchThreatByDescription}}
+\index{SearchThreatByDescription@{SearchThreatByDescription}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchThreatByDescription()}{SearchThreatByDescription()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Threat\+By\+Description (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{int}]{language\+Code }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON by the description field. 
+
+This method returns the Monarc\+Threat object relative to the description, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The string of the description to be searched \\
+\hline
+{\em language\+Code} & A numerical code of the language in which to search\+: 1 -\/ label1 (usually French); 2 -\/ Label2 (usually English); 3 -\/ Label3 (usually German); 4 -\/ Label4 (usually Luxembourgish) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the threat found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_afd5b995c8c1fd5130211022d6e0ba824}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_afd5b995c8c1fd5130211022d6e0ba824}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchThreatByLabel@{SearchThreatByLabel}}
+\index{SearchThreatByLabel@{SearchThreatByLabel}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchThreatByLabel()}{SearchThreatByLabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Threat\+By\+Label (\begin{DoxyParamCaption}\item[{String}]{label,  }\item[{int}]{language\+Code }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON by the label field. 
+
+This method returns the Monarc\+Threat object relative to the label, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & The string of the label to be searched \\
+\hline
+{\em language\+Code} & A numerical code of the language in which to search\+: 1 -\/ label1 (usually French); 2 -\/ Label2 (usually English); 3 -\/ Label3 (usually German); 4 -\/ Label4 (usually Luxembourgish) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the threat found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ac724dcc860b01aa27fd750f3776dc66d}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ac724dcc860b01aa27fd750f3776dc66d}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchThreatByUUID@{SearchThreatByUUID}}
+\index{SearchThreatByUUID@{SearchThreatByUUID}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchThreatByUUID()}{SearchThreatByUUID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Threat\+By\+UUID (\begin{DoxyParamCaption}\item[{String}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Search the threats extracted from the Monarc JSON by the uuid field. 
+
+This method returns the Monarc\+Threat object relative to the uuid, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The uuid string to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the threat found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a5af83a537b3e52ec7018be51ee3e0c53}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a5af83a537b3e52ec7018be51ee3e0c53}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchVulnerabilityByCode@{SearchVulnerabilityByCode}}
+\index{SearchVulnerabilityByCode@{SearchVulnerabilityByCode}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchVulnerabilityByCode()}{SearchVulnerabilityByCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Vulnerability\+By\+Code (\begin{DoxyParamCaption}\item[{String}]{code }\end{DoxyParamCaption})}
+
+
+
+Search the vulnerabilities extracted from the Monarc JSON by the code field. 
+
+This method returns the Monarc\+Vulnerability object relative to the code, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code string to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the vulnerability found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a2aa52235ccbfcdd28f3137ea2431b2ba}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a2aa52235ccbfcdd28f3137ea2431b2ba}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchVulnerabilityByDescription@{SearchVulnerabilityByDescription}}
+\index{SearchVulnerabilityByDescription@{SearchVulnerabilityByDescription}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchVulnerabilityByDescription()}{SearchVulnerabilityByDescription()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Vulnerability\+By\+Description (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{int}]{language\+Code }\end{DoxyParamCaption})}
+
+
+
+Search the vulnerabilities extracted from the Monarc JSON by the description field. 
+
+This method returns the Monarc\+Vulnerability object relative to the description, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The string of the description to be searched \\
+\hline
+{\em language\+Code} & A numerical code of the language in which to search\+: 1 -\/ label1 (usually French); 2 -\/ Label2 (usually English); 3 -\/ Label3 (usually German); 4 -\/ Label4 (usually Luxembourgish) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the vulnerability found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ab78492ca51da5149903c1eb177bef2ae}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ab78492ca51da5149903c1eb177bef2ae}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchVulnerabilityByLabel@{SearchVulnerabilityByLabel}}
+\index{SearchVulnerabilityByLabel@{SearchVulnerabilityByLabel}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchVulnerabilityByLabel()}{SearchVulnerabilityByLabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Vulnerability\+By\+Label (\begin{DoxyParamCaption}\item[{String}]{label,  }\item[{int}]{language\+Code }\end{DoxyParamCaption})}
+
+
+
+Search the vulnerabilities extracted from the Monarc JSON by the label field. 
+
+This method returns the Monarc\+Vulnerability object relative to the label, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & The string of the label to be searched \\
+\hline
+{\em language\+Code} & A numerical code of the language in which to search\+: 1 -\/ label1 (usually French); 2 -\/ Label2 (usually English); 3 -\/ Label3 (usually German); 4 -\/ Label4 (usually Luxembourgish) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the vulnerability found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_acc448abfed0a7a0424f79ef72a909959}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_acc448abfed0a7a0424f79ef72a909959}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!SearchVulnerabilityByUUID@{SearchVulnerabilityByUUID}}
+\index{SearchVulnerabilityByUUID@{SearchVulnerabilityByUUID}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{SearchVulnerabilityByUUID()}{SearchVulnerabilityByUUID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}} lu.\+itrust.\+monarc.\+Monarc\+Database.\+Search\+Vulnerability\+By\+UUID (\begin{DoxyParamCaption}\item[{String}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Search the vulnerabilities extracted from the Monarc JSON by the uuid field. 
+
+This method returns the Monarc\+Vulnerability object relative to the uuid, which is unique to the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID string to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that represents the vulnerability found in the search. If more than one is found, the first one will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ac6c50e74aee94b75be2ecf116c316a08}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ac6c50e74aee94b75be2ecf116c316a08}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!UpdateThreatValue@{UpdateThreatValue}}
+\index{UpdateThreatValue@{UpdateThreatValue}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{UpdateThreatValue()}{UpdateThreatValue()}}
+{\footnotesize\ttfamily void lu.\+itrust.\+monarc.\+Monarc\+Database.\+Update\+Threat\+Value (\begin{DoxyParamCaption}\item[{String}]{threat\+UUID,  }\item[{String}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a6426737d0227dcbb579ac1e8eaa28903}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a6426737d0227dcbb579ac1e8eaa28903}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!jsonMap@{jsonMap}}
+\index{jsonMap@{jsonMap}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{jsonMap}{jsonMap}}
+{\footnotesize\ttfamily Map$<$String, ?$>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+json\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a02fa8d86c42250eff8277bde4075a029}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a02fa8d86c42250eff8277bde4075a029}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!monarcAMVList@{monarcAMVList}}
+\index{monarcAMVList@{monarcAMVList}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{monarcAMVList}{monarcAMVList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcAMV}{Monarc\+AMV}}$>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+monarc\+AMVList\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a30aa4e2336b49e5aca5f8267f519c62e}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a30aa4e2336b49e5aca5f8267f519c62e}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!monarcData@{monarcData}}
+\index{monarcData@{monarcData}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{monarcData}{monarcData}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcInstance}{Monarc\+Instance}}$>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+monarc\+Data\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a4650ea3f3464493beab46ff4ae6e0621}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a4650ea3f3464493beab46ff4ae6e0621}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!monarcRiskList@{monarcRiskList}}
+\index{monarcRiskList@{monarcRiskList}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{monarcRiskList}{monarcRiskList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcRisks}{Monarc\+Risks}}$>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+monarc\+Risk\+List\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ad3858703d3b94f285970ebf17aab93b1}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_ad3858703d3b94f285970ebf17aab93b1}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!monarcThreatList@{monarcThreatList}}
+\index{monarcThreatList@{monarcThreatList}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{monarcThreatList}{monarcThreatList}}
+{\footnotesize\ttfamily Map$<$String, \mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcThreats}{Monarc\+Threats}}$>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+monarc\+Threat\+List\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a01e40b3531855230b2124b71799f8de2}\label{classlu_1_1itrust_1_1monarc_1_1MonarcDatabase_a01e40b3531855230b2124b71799f8de2}} 
+\index{lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}!monarcVulnerabilityList@{monarcVulnerabilityList}}
+\index{monarcVulnerabilityList@{monarcVulnerabilityList}!lu.itrust.monarc.MonarcDatabase@{lu.itrust.monarc.MonarcDatabase}}
+\doxysubsubsection{\texorpdfstring{monarcVulnerabilityList}{monarcVulnerabilityList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classlu_1_1itrust_1_1monarc_1_1MonarcVulnerabilities}{Monarc\+Vulnerabilities}}$>$ lu.\+itrust.\+monarc.\+Monarc\+Database.\+monarc\+Vulnerability\+List\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/lu/itrust/monarc/\mbox{\hyperlink{MonarcDatabase_8java}{Monarc\+Database.\+java}}\end{DoxyCompactItemize}
