@@ -133,6 +133,8 @@ public MonarcVulnerabilities searchVulnerabilityByDescription(String description
 
 Copyright © itrust consulting. All rights reserved.
 
+Acknowledgment: This tool was co-funded by the Ministry of Economy and Foreign Trade of Luxembourg, within the project Cloud Cybersecurity Fortress of Open Resources and Tools for Resilience (CyFORT).  
+
 Licensed under the GNU Affero General Public License (AGPL) v3.0.
 
 ## Contact
