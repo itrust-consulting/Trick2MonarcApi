@@ -4,9 +4,9 @@
 
 Open-source Java API for MONARC (Optimised Risk Analysis Method) allowing to inject risk information from other sophisticated risk management tool such as TRICK (Tool for Riskmanagement of an ISMS based on a Central Knowledge base) by facilitating changes to the MONARC json data file. The tool was developed to migrate risk information of multiple organization in scope of NIS to the data format requested by the NIS regulator in Luxembourg.
 
-This project is compliant with MONARC version [2.21.7](https://www.monarc.lu/news/2023/10/25/monarc-2127-released/). This API reads a JSON file exported from MONARC and gathers information by interepreting a subset of such file and creating Java objects from the elements it can interpret from the exported JSON file.
+This project is compliant with MONARC version [2.12.7](https://www.monarc.lu/news/2023/10/25/monarc-2127-released/). This API reads a JSON file exported from MONARC and gathers information by interepreting a subset of such file and creating Java objects from the elements it can interpret from the exported JSON file.
 
-Furthermore, after the Java objects have been prcessed by this API, it can export a JSON file compliant with MONARC version 2.21.7.
+Furthermore, after the Java objects have been prcessed by this API, it can export a JSON file compliant with MONARC version 2.12.7.
 
 # API usage
 
