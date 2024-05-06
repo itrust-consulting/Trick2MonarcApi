@@ -90,7 +90,7 @@
         <repository>
             <id>github</id>
             <name>GitHub itrust consulting Apache Maven Packages</name>
-            <url>https://github.com/itrust-consulting/Trick2MonarcApi</url>
+            <url>https://maven.pkg.github.com/itrust-consulting/Trick2MonarcApi</url>
         </repository>
     </distributionManagement>
 
