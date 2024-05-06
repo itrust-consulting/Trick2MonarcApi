@@ -8,7 +8,7 @@
     <version>0.7.5</version>
     <packaging>jar</packaging>
 
-    <name>Trick2monarcApi</name>
+    <name>Trick2MonarcApi</name>
 
 
     <properties>
